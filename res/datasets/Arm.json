@@ -1,0 +1,19 @@
+{
+  "name": "IMU4",
+  "paths": {
+    "source": "../../datasets/MultiIMU/Data"
+  },
+  "data_mode": "Arm",
+  "train_test_range": [375, 104, 104],
+  "series_per_data": [20, 10, 10],
+  "frame_rate": [1, 11],
+  "series_length": [60, 180],
+  "source": {
+    "width": 248,
+    "height": 260,
+    "channel": 2
+  },
+  "target": {
+    "elements": 15
+  }
+}

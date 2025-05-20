@@ -1,0 +1,9 @@
+{
+  "name": "DeNet",
+  "pretrained": true,
+  "useIN": true,
+  "type_rnn": "Conv2dLSTM",
+  "angle": true,
+  "accele": true,
+  "imu_ids": [0, 1, 2, 3]
+}
