@@ -5,3 +5,4 @@ scipy
 timm
 mamba_ssm
 argparse
+pyvista

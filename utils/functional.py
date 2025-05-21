@@ -2,6 +2,14 @@ import torch
 import torch.nn.functional as F
 
 
+def get_pixelated_zero_plane(height, width, dtype, device):
+    return torch.tensor([[
+        [0.0, 0.0, 0.0],
+        [-(width - 1) / 2, -(height - 1) / 2, 0.0],
+        [(width - 1) / 2, -(height - 1) / 2, 0.0]
+    ]], dtype=dtype, device=device)
+
+
 def get_axis(series, eps=1e-20):
     p1p2 = series[:, 1:3, :] - series[:, 0:1, :]
     ax_x = p1p2[:, 1, :] - p1p2[:, 0, :]

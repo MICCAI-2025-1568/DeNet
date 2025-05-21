@@ -3,6 +3,8 @@ from .logger import Logger
 from . import common
 from . import metric
 from . import functional
+from . import reconstruction
+from . import render
 
 
 __all__ = [
@@ -10,4 +12,6 @@ __all__ = [
     'common',
     'metric',
     'functional',
+    'reconstruction',
+    'render',
 ]
